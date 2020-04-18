@@ -3,21 +3,60 @@
 <head>
 <title>보더콜리 안녕!</title>
 <meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+function setcolor(color){
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i<alist.length){
+    console.log(alist[i]);
+    alist[i].style.color = 'color';
+    i = i + 1;
+    }
+
+}
+function nightDayhandler(self){}
+var target = document.querySelector('body');
+if(self.value === 'night'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        this.value = 'day';
+
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i<alist.length){
+          console.log(alist[i]);
+          alist[i].style.color = 'powderblue';
+          i = i + 1;
+          }
+
+
+        }  else{
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        self.value = 'night';
+
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i<alist.length){
+  console.log(alist[i]);
+  alist[i].style.color = 'blue';
+  i = i + 1;
+  )
+  }
+}
+</script>
 </head>
  <body >
    <h1><a href="index.html">보더콜리</a></h1>
 
     <input type="button" value="night" onclick="
-  if(this.value === 'night'){
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-    this.value = 'day';
-}  else{
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';
-    this.value = 'night';
-}
-    ">
+    nightDayhandler(this);
+">
 <ol>
   <li><a href="1보더콜리의 사전적 정의.html">보더콜리의 사전적 정의</a></li>
   <li><a href="2프리스비.html">프리스비</a></li>
