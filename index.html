@@ -4,8 +4,20 @@
 <title>보더콜리 안녕!</title>
 <meta charset="utf-8">
 </head>
- <body>
+ <body >
    <h1><a href="index.html">보더콜리</a></h1>
+
+    <input type="button" value="night" onclick="
+  if(this.value === 'night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    this.value = 'day';
+}  else{
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    this.value = 'night';
+}
+    ">
 <ol>
   <li><a href="1보더콜리의 사전적 정의.html">보더콜리의 사전적 정의</a></li>
   <li><a href="2프리스비.html">프리스비</a></li>
